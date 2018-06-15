@@ -1,0 +1,243 @@
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+#errorInfo {
+    width: 300px;
+    position: relative;
+}
+
+.errorInfo {
+    margin: 8px 0px;
+}
+
+.errorInfo1 {
+    margin: 18px 0px;
+}
+
+#all {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    margin-top: -90px;
+    left: 50%;
+    margin-left: -150px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #a6b15047;
+}
+
+.lb_login_wra {
+    width: 100%;
+    height: 100%;
+    background-image: url("./image/login1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+html,
+body,
+.index_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.reister_wra {
+    width: 300px;
+    height: 418px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    margin-top: -209px;
+    left: 50%;
+    margin-left: -150px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #a6b15047;
+}
+
+#sub {
+    font-family: "黑体";
+    font-size: 15px;
+    padding: 5px;
+    width: 80px;
+    margin: 10px 28px 0px 27px;
+    background: #5bad56;
+    border-radius: 6px;
+}
+
+.login_register {
+    border: 1px solid rgba(104, 115, 186, 0.29);
+    font-size: 25px;
+    width: 160px;
+    margin-right: 24px;
+    float: right;
+}
+
+.user_pass {
+    margin-bottom: 18px;
+}
+
+.user_pass_font {
+    font-size: 25px;
+}
+
+#submit {
+    font-family: "黑体";
+    font-size: 15px;
+    padding: 5px;
+    width: 241px;
+    background: #5bad56;
+    /* margin: 10px 0px 0px 27px; */
+    margin: auto;
+    border-radius: 12px;
+}
+
+#reset {
+    font-family: "黑体";
+    font-size: 15px;
+    padding: 5px;
+    width: 80px;
+    margin: 10px 28px 0px 27px;
+    background: #5bad56;
+    border-radius: 6px;
+}
+
+.p-mar {
+    margin-left: 120px;
+}
+
+.forgetPass {
+    font-family: "黑体";
+    font-size: 15px;
+}
+
+.red {
+    border: 3px solid rgba(243, 104, 104, 0.45);
+}
+
+.green {
+    border: 3px solid rgba(40, 177, 46, 0.49);
+}
+
+.err {
+    color: red;
+    font-size: 12pt;
+}
+
+.correct {
+    color: black;
+    font-size: 15pt;
+}
+
+
+/* 填写问卷css */
+
+.que-list {
+    width: inherit;
+    height: inherit;
+    background: rgb(237, 242, 246);
+    padding-top: 30px;
+}
+
+.list-wrapp {
+    width: 70%;
+    margin: 0px auto;
+    background: white;
+    box-shadow: 0px 0px 10px;
+}
+
+.list-wrapp>h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.list-wrapp>p {
+    margin-left: 5%;
+}
+
+.list-wrapp>hr {
+    width: 90%;
+    margin: 5px auto;
+    height: 2px;
+    background: rgb(117, 186, 243)
+}
+
+.list-wrapp>ul {
+    margin-top: 30px;
+}
+
+.list>li {
+    width: 90%;
+    margin: 25px auto;
+    box-shadow: 0px 0px 10px #afa74c;
+}
+
+.options {
+    padding-left: 28px
+}
+
+.options>li {
+    font-size: 15px;
+    padding: 10px 80px;
+}
+
+.options>textarea {
+    font-size: 15px;
+    margin: 10px 80px;
+}
+
+.options>p {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.stars {
+    color: red;
+    margin-right: 5px;
+}
+
+#queform {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.submitq {
+    margin-left: 49% !important;
+    width: 92px !important;
+    height: 34px !important;
+    background: #75baf3 !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 2px !important;
+}

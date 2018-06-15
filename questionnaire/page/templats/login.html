@@ -1,0 +1,14 @@
+<div class="lb_login_wra">
+    <div id="all">
+        <h1>用户登录</h1>
+        <p id="errorInfo" class="errorInfo"></p>
+        <p class="user_pass"><span class="user_pass_font">用户名</span><input class="login_register" type="text" id="username" ng-model="user_name_pass.username" /></p>
+        <p class="user_pass"><span class="user_pass_font">密码&nbsp;&nbsp;&nbsp;</span><input class="login_register" type="password" id="password" ng-model="user_name_pass.password" /></p>
+
+        <div id="submit" ng-click="submit()">登录</div>
+        <br />
+
+        <p class="p-mar"> <span class="forgetPass"> 忘记密码</span> <span id="reset" ng-click="goRegister()">免费注册</span></p>
+
+    </div>
+</div>

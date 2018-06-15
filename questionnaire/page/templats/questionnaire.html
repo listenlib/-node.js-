@@ -1,0 +1,52 @@
+<div class="que-list">
+    <div class="list-wrapp">
+        <h2>欢迎来到调查问卷系统</h2>
+        <p>欢迎填写问卷</p>
+        <hr />
+        <ul class="list">
+            <form action="http://127.0.0.1:9000/fillQuestionnaire" id="queform">
+                <!-- 生成单选 -->
+                <li ng-repeat="item in radio track by $index">
+                    <ul class="options">
+                        <p><span class="stars">*</span> 第<span class="sequence"></span>题：{{item.quest}}</p>
+                        <li><label><input type="radio" value="{{item.q1}}" name="radio" /></label>{{item.q1}}</li>
+                        <li><label><input type="radio" value="{{item.q2}}" name="radio" /></label>{{item.q2}}</li>
+                        <li><label><input type="radio" value="{{item.q3}}" name="radio" /></label>{{item.q3}}</li>
+                        <li><label><input type="radio" value="{{item.q4}}" name="radio" /></label>{{item.q4}}</li>
+                    </ul>
+                </li>
+                <!-- 生成多选 -->
+                <li ng-repeat="item in multi track by $index">
+                    <ul class="options">
+                        <p><span class="stars">*</span> 第<span class="sequence"></span>题：{{item.quest}}</p>
+                        <li><label><input type="checkbox" value="{{item.q1}}" name="checkbox" /></label>{{item.q1}}</li>
+                        <li><label><input type="checkbox" value="{{item.q2}}" name="checkbox" /></label>{{item.q2}}</li>
+                        <li><label><input type="checkbox" value="{{item.q3}}" name="checkbox" /></label>{{item.q3}}</li>
+                        <li><label><input type="checkbox" value="{{item.q4}}" name="checkbox" /></label>{{item.q4}}</li>
+                    </ul>
+                </li>
+                <!-- 生成文本 -->
+                <li ng-repeat="item in text track by $index">
+                    <ul class="options">
+                        <p><span class="stars">*</span> 第<span class="sequence"></span>题：{{item.quest}}</p>
+                        <textarea rows="10" cols="50" name="comment" form="queform">
+请在此处输入文本...</textarea>
+                    </ul>
+                </li>
+                <br />
+                <input type="submit" value="提交" class="submitq" />
+            </form>
+        </ul>
+    </div>
+
+</div>
+<script>
+    var sequenceLength = document.getElementsByClassName("sequence");
+    console.log(typeof sequenceLength);
+    var i = 0
+
+    for (let j = 0; j < sequenceLength.length; j++) {
+        sequenceLength[j].innerHTML = i;
+        i++;
+    }
+</script>

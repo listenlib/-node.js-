@@ -1,0 +1,13 @@
+<div class="lb_login_wra">
+    <div class="reister_wra">
+        <h1>用户注册</h1>
+        <p id="errorInfo" class="errorInfo1">请输入信息</p>
+        <p class="user_pass">用户名<input type="text" class="login_register" id="username" value="" ng-model="userRegisterInfo.username"></p>
+        <p class="user_pass">密码<input type="password" class="login_register" name="password" id="password" value="" ng-model="userRegisterInfo.password"></p>
+        <p class="user_pass">确认密码<input type="password" class="login_register" name="passwordCheck" id="passwordCheck" value="" ng-model="userRegisterInfo.passValid"></p>
+        <p class="user_pass">电话<input type="text" name="tel" class="login_register" id="phone" value="" ng-model="userRegisterInfo.tel"></p>
+        <p class="user_pass">邮箱<input type="text" name="mail" class="login_register" id="email" value="" ng-model="userRegisterInfo.email"></p>
+        <p><input type="submit" id="sub" ng-click="register()" value="提交">
+            <input type="button" id="reset" value="重置" ng-click="reset()"></p>
+    </div>
+</div>
